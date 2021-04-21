@@ -1,0 +1,211 @@
+:root{
+    --blanco:rgb(250, 254, 255);
+    --rosaa: rgb(243, 162, 243);
+    --naran: rgb(255, 216, 109);
+    --negr:rgb(14, 13, 13);
+    --Rosiii:#ffcbf8;
+    --rosmora:rgb(250, 243, 166);
+    --morado: rgb(175, 52, 148);
+    --grid:rgb(171, 170, 172);
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mendatary;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    background-image: linear-gradient(to right, var(--Rosiii) 0% , var(--rosmora) 100%);
+
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+.titulo{
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.titulo span{
+    font-size: 2rem;
+    color:rgb(153, 47, 190)!important;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.sombra{
+    box-shadow: 0.8rem 0.7rem 4px rgb(131, 125, 125);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.navegacion-principal{
+     display: flex;
+     flex-direction: column;
+}
+@media (min-width: 964px ){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.navegacion-principal a{
+    display: block;
+    text-align:  center;
+    /*Color de las estiquetas de navegación*/
+    color: var(--negr);
+    /*Se le quita la decoración al texto */
+    text-decoration: none;
+
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    
+}
+.nav-bg{
+    /*Cuadro de los link de navegación*/
+    background-color:var(--rosaa); 
+}
+/*Efecto de selección */
+.navegacion-principal a:hover{
+   background-color:var(--naran);
+} 
+
+@media(min-width:480px){
+    body{
+        /*background-color:;*/
+    }
+}
+/**/
+.direccion{
+    color: aliceblue;
+    font:message-box;  
+}
+.hero{
+    background-image: url(img/Glamur4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.contenido-hero{
+    position: absolute;
+    background-color:rgb( 0 0 0/ 48%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contenido-hero h2,
+.contenido-hero p{
+
+}
+@media (min-width:1126px){
+    .servicios{
+        display: grid;
+        grid:120px 120px/ 590px 590px;
+       
+        
+        
+        
+    }
+    
+}
+.servicio .icono{
+    height: 9rem;
+    width: 9rem;
+    background-color: var(--naran);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.servicio h3{
+    color: var(--morado);
+    font-weight:bolder;
+ 
+}
+.formulario{
+    background-color: var(--grid);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border:none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--naran);
+}
+.contenedor-campos{
+    
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: var(--naran);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding:1.5rem;
+    border-radius: .5rem;
+}
+.boton{
+    background-color: blueviolet;
+    color: cornsilk;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius:.5rem;
+    width: 100%; 
+    text-align: center;
+    border:none;
+}
+.w-100{
+    width: 100%;
+}
+@media (min-width: 768px){
+    .w-100{
+        width: auto;
+    }
+}
+.alinea-derecha{
+    justify-content: flex-end;
+}
+.flex{
+    display: flex;
+}
+
+
